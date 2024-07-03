@@ -7,18 +7,8 @@ public class Resolution {
         String pg = "programação";
         String ao = "ão";
 
-        boolean eIgual = false;
+        String um = pg.substring(pg.length()-2);
 
-        String compara = "";
-
-        for (int i = 0; i < pg.toCharArray().length; i++) {
-            if (i == pg.toCharArray().length - 1){
-                compara = "" + pg.toCharArray()[i-1] + pg.toCharArray()[i];
-
-                if (compara.equalsIgnoreCase(ao)) eIgual = true;
-            }
-        }
-
-        System.out.println(eIgual);
+        System.out.println(um.equalsIgnoreCase(ao));
     }
 }
